@@ -1,13 +1,15 @@
-package top.api;
+package com.demon.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
-public class ApiDemoApplication {
+@MapperScan("com.demon.api.mapper")
+public class App {
 
     public static void main(String[] args) {
-        SpringApplication.run(ApiDemoApplication.class, args);
+        SpringApplication.run(App.class, args);
     }
 
 }

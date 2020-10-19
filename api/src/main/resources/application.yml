@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/6api_top?useUnicode=true&characterEncoding=utf8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    username: 6api_top
+    password: Fz37P2L2b3annaNW
+    hikari:
+      maximum-pool-size: 30
+      minimum-idle: 10
+
