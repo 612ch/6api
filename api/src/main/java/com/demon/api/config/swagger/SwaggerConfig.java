@@ -22,6 +22,7 @@ import java.util.List;
  * @Author ChenHao
  * @Date 2020/10/19 19:12
  **/
+
 @Configuration
 @EnableSwagger2
 @EnableSwaggerBootstrapUI

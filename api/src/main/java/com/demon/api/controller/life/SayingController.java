@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
  * @Author ChenHao
  * @Date 2020/10/19 19:07
  **/
+
 @RestController
 @RequestMapping("saying")
 @Api(tags = "程序名言")

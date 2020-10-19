@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
  * @Date 2020/10/19 23:09
  **/
 
+
 @ControllerAdvice
 public class CommonExceptionHandler {
     @ExceptionHandler(CommonException.class)

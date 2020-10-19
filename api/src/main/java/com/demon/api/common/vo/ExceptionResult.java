@@ -9,6 +9,7 @@ import lombok.Data;
  * @Author ChenHao
  * @Date 2020/10/19 23:10
  **/
+
 @Data
 public class ExceptionResult {
     private String timestamp;
