@@ -1,5 +1,9 @@
 package com.demon.api.mapper;
 
+import com.demon.api.pojo.Saying;
+import org.apache.ibatis.annotations.Select;
+import tk.mybatis.mapper.common.Mapper;
+
 /**
  * @ClassName SayingMapper
  * @Descriotion 程序名言Mapper
@@ -8,6 +12,10 @@ package com.demon.api.mapper;
  **/
 
 
-public interface SayingMapper {
+public interface SayingMapper extends Mapper<Saying> {
+
+    @Select("select * from api_saying order by rand() limit 1")
+    Saying getSaying();
+
 
 }

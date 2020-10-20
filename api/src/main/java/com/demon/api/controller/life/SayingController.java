@@ -1,5 +1,6 @@
 package com.demon.api.controller.life;
 
+import com.demon.api.pojo.Saying;
 import com.demon.api.service.SayingService;
 import com.github.xiaoymin.swaggerbootstrapui.annotations.EnableSwaggerBootstrapUI;
 import io.swagger.annotations.Api;
@@ -23,11 +24,11 @@ public class SayingController {
     @Autowired
     SayingService sayingService;
 
-    @RequestMapping(value = "/getSaying", method = {RequestMethod.GET,RequestMethod.POST})
-    @ApiOperation(value = "获取程序名言",notes = "随机获取一句程序名言")
-    public ResponseEntity<String> getSaying(){
-
-        return ResponseEntity.ok("test");
+    @RequestMapping(value = "/getSaying", method = {RequestMethod.GET, RequestMethod.POST})
+    @ApiOperation(value = "获取程序名言", notes = "随机获取一句程序名言")
+    public ResponseEntity<String> getSaying() {
+        Saying saying = sayingService.getSaying();
+        return ResponseEntity.ok(saying.getContent());
     }
 
 
