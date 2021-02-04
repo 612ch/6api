@@ -8,13 +8,13 @@ import lombok.NoArgsConstructor;
 /**
  * @ClassName CommonException
  * @Descriotion 通用异常监听
- * @Author ChenHao
+ * @Author Demon
  * @Date 2020/10/19 23:09
  **/
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
-public class CommonException extends Exception{
+public class CommonException extends RuntimeException{
     private ExceptionEnum exceptionEnum;
 }

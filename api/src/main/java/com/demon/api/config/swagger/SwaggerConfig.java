@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * @ClassName SwaggerConfig
  * @Descriotion Swagger配置类
- * @Author ChenHao
+ * @Author Demon
  * @Date 2020/10/19 19:12
  **/
 
@@ -38,7 +38,7 @@ public class SwaggerConfig {
      */
     @Bean
     public Docket allAPI() {
-        return new Docket(DocumentationType.SWAGGER_2).groupName("All API")// 定义组 娱乐类接口
+        return new Docket(DocumentationType.SWAGGER_2).groupName("全部接口")// 定义组 所有接口All API
                 .select() // 选择那些路径和 api 会生成 document
                 .apis(RequestHandlerSelectors.basePackage(PACKAGE_NAME)) // 拦截的包路径
                 .paths(PathSelectors.any())  //拦截所有接口
@@ -54,7 +54,7 @@ public class SwaggerConfig {
      */
     @Bean
     public Docket delightAPI() {
-        return new Docket(DocumentationType.SWAGGER_2).groupName("Delight API")// 定义组 娱乐类接口
+        return new Docket(DocumentationType.SWAGGER_2).groupName("娱乐类接口")// 定义组 娱乐类接口Delight API
                 .select() // 选择那些路径和 api 会生成 document
                 .apis(RequestHandlerSelectors.basePackage(PACKAGE_NAME + ".delight")) // 拦截的包路径
                 .paths(PathSelectors.any())  //拦截所有接口
@@ -70,7 +70,7 @@ public class SwaggerConfig {
      */
     @Bean
     public Docket functionAPI() {
-        return new Docket(DocumentationType.SWAGGER_2).groupName("Function API")// 定义组
+        return new Docket(DocumentationType.SWAGGER_2).groupName("功能类接口")// 定义组Function API
                 .select() // 选择那些路径和 api 会生成 document
                 .apis(RequestHandlerSelectors.basePackage(PACKAGE_NAME + ".function")) // 拦截的包路径
                 .paths(PathSelectors.any())  //拦截所有接口
@@ -86,7 +86,7 @@ public class SwaggerConfig {
      */
     @Bean
     public Docket lifeAPI() {
-        return new Docket(DocumentationType.SWAGGER_2).groupName("Life API")// 定义组 生活类接口
+        return new Docket(DocumentationType.SWAGGER_2).groupName("生活类接口")// 定义组 生活类接口Life API
                 .select() // 选择那些路径和 api 会生成 document
                 .apis(RequestHandlerSelectors.basePackage(PACKAGE_NAME + ".life")) // 拦截的包路径
                 .paths(PathSelectors.any())  //拦截所有接口
@@ -103,9 +103,25 @@ public class SwaggerConfig {
      */
     @Bean
     public Docket questionAPI() {
-        return new Docket(DocumentationType.SWAGGER_2).groupName("Question API")// 定义组
+        return new Docket(DocumentationType.SWAGGER_2).groupName("知识类接口")// 定义组Question API
                 .select() // 选择那些路径和 api 会生成 document
                 .apis(RequestHandlerSelectors.basePackage(PACKAGE_NAME + ".question")) // 拦截的包路径
+                .paths(PathSelectors.any())  //拦截所有接口
+                .build() // 创建
+                .securitySchemes(securitySchemes())
+                .apiInfo(apiInfo()); // 配置说明
+    }
+
+    /**
+     * 图片类接口
+     *
+     * @return {@link Docket}
+     */
+    @Bean
+    public Docket imageAPI() {
+        return new Docket(DocumentationType.SWAGGER_2).groupName("图片类接口")// 定义组Question API
+                .select() // 选择那些路径和 api 会生成 document
+                .apis(RequestHandlerSelectors.basePackage(PACKAGE_NAME + ".image")) // 拦截的包路径
                 .paths(PathSelectors.any())  //拦截所有接口
                 .build() // 创建
                 .securitySchemes(securitySchemes())
@@ -119,8 +135,8 @@ public class SwaggerConfig {
      */
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("6API接口平台")// 标题
-                .description("提供后台所有Restful接口")// 描述
+                .title("6API")// 标题
+                .description("Restful API")// 描述
                 .contact(new Contact("demon", "http://www.6api.top", "1319503977@qq.com"))// 联系
                 .termsOfServiceUrl("http://www.6api.top")//网站url
                 .version("1.0")// 版本

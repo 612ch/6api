@@ -14,7 +14,7 @@ import tk.mybatis.mapper.common.Mapper;
 
 public interface SayingMapper extends Mapper<Saying> {
 
-    @Select("select * from api_saying order by rand() limit 1")
+    @Select("select * from api_saying where del_flag='0' order by rand() limit 1")
     Saying getSaying();
 
 

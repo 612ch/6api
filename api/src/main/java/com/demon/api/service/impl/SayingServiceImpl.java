@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 /**
  * @ClassName SayingService
  * @Descriotion 程序名言ServiceImpl
- * @Author ChenHao
+ * @Author Demon
  * @Date 2020/10/19 19:10
  **/
 

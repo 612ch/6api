@@ -6,7 +6,7 @@ import lombok.Data;
 /**
  * @ClassName ExceptionResult
  * @Descriotion 异常结果VO
- * @Author ChenHao
+ * @Author Demon
  * @Date 2020/10/19 23:10
  **/
 

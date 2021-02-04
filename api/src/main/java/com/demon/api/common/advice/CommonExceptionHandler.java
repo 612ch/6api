@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 /**
  * @ClassName CommonExceptionHandler
  * @Descriotion 通用异常处理
- * @Author ChenHao
+ * @Author Demon
  * @Date 2020/10/19 23:09
  **/
 

@@ -5,7 +5,7 @@ import com.demon.api.pojo.Saying;
 /**
  * @ClassName SayingService
  * @Descriotion 程序名言Service
- * @Author ChenHao
+ * @Author Demon
  * @Date 2020/10/19 19:08
  **/
 
