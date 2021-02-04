@@ -1,5 +1,7 @@
 package com.demon.api.common.vo;
 
+import io.swagger.annotations.ApiModelProperty;
+
 /**
  * @ClassName Result
  * @Descriotion 返回信息
@@ -8,8 +10,11 @@ package com.demon.api.common.vo;
  **/
 public class Result<T> {
 
+    @ApiModelProperty("错误码 1000正常")
     private int code;
+    @ApiModelProperty("错误消息")
     private String msg;
+    @ApiModelProperty("返回数据")
     private T data;
 
 
