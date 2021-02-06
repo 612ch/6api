@@ -1,6 +1,6 @@
-package com.demon.api.service;
+package com.demon.api.service.life;
 
-import com.demon.api.pojo.Lover;
+import com.demon.api.pojo.life.Lover;
 
 /**
  * @ClassName LoverService

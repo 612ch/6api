@@ -1,8 +1,8 @@
-package com.demon.api.service.impl;
+package com.demon.api.service.life.impl;
 
-import com.demon.api.mapper.SayingMapper;
-import com.demon.api.pojo.Saying;
-import com.demon.api.service.SayingService;
+import com.demon.api.mapper.life.SayingMapper;
+import com.demon.api.pojo.life.Saying;
+import com.demon.api.service.life.SayingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

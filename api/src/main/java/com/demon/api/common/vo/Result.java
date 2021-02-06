@@ -10,9 +10,9 @@ import io.swagger.annotations.ApiModelProperty;
  **/
 public class Result<T> {
 
-    @ApiModelProperty("错误码 1000正常")
+    @ApiModelProperty("错误码")
     private int code;
-    @ApiModelProperty("错误消息")
+    @ApiModelProperty("错误提示")
     private String msg;
     @ApiModelProperty("返回数据")
     private T data;

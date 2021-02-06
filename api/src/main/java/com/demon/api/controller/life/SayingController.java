@@ -1,8 +1,8 @@
 package com.demon.api.controller.life;
 
 import com.demon.api.common.vo.Result;
-import com.demon.api.pojo.Saying;
-import com.demon.api.service.SayingService;
+import com.demon.api.pojo.life.Saying;
+import com.demon.api.service.life.SayingService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

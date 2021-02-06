@@ -1,6 +1,6 @@
-package com.demon.api.mapper;
+package com.demon.api.mapper.life;
 
-import com.demon.api.pojo.Saying;
+import com.demon.api.pojo.life.Saying;
 import org.apache.ibatis.annotations.Select;
 import tk.mybatis.mapper.common.Mapper;
 

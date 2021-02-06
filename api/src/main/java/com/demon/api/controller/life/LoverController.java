@@ -1,8 +1,8 @@
 package com.demon.api.controller.life;
 
 import com.demon.api.common.vo.Result;
-import com.demon.api.mapper.LoverMapper;
-import com.demon.api.pojo.Lover;
+import com.demon.api.pojo.life.Lover;
+import com.demon.api.service.life.LoverService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,12 +23,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class LoverController {
 
     @Autowired
-    LoverMapper loverMapper;
+    LoverService loverService;
 
     @RequestMapping(value = "/getLover", method = {RequestMethod.GET, RequestMethod.POST})
     @ApiOperation(value = "获取土味情话", notes = "随机获取一句土味情话")
     public Result<String> getLover() {
-        Lover lover = loverMapper.getLover();
+        Lover lover = loverService.getLover();
         return Result.success(lover.getContent());
     }
 

@@ -1,8 +1,8 @@
-package com.demon.api.service.impl;
+package com.demon.api.service.life.impl;
 
-import com.demon.api.mapper.LoverMapper;
-import com.demon.api.pojo.Lover;
-import com.demon.api.service.LoverService;
+import com.demon.api.mapper.life.LoverMapper;
+import com.demon.api.pojo.life.Lover;
+import com.demon.api.service.life.LoverService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

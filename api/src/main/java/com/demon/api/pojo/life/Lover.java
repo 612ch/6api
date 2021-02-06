@@ -1,4 +1,4 @@
-package com.demon.api.pojo;
+package com.demon.api.pojo.life;
 
 import lombok.Data;
 

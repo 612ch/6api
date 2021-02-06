@@ -1,6 +1,6 @@
-package com.demon.api.service;
+package com.demon.api.service.life;
 
-import com.demon.api.pojo.Saying;
+import com.demon.api.pojo.life.Saying;
 
 /**
  * @ClassName SayingService
